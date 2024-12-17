@@ -1,9 +1,9 @@
 package com.ideanet.simple_cqrs.event;
 
 public class UserCreatedEvent {
-    private Long id;
-    private String name;
-    private String email;
+    private final Long id;
+    private final String name;
+    private final String email;
 
     public UserCreatedEvent(Long id, String name, String email) {
         this.id = id;

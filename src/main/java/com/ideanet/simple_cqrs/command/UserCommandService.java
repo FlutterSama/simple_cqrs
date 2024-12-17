@@ -10,9 +10,9 @@ import org.springframework.stereotype.Service;
 //bad practice, use Interface (i dont bc this is just test)
 public class UserCommandService {
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
-    private ApplicationEventPublisher applicationEventPublisher;
+    private final ApplicationEventPublisher applicationEventPublisher;
 
     public UserCommandService(UserRepository userRepository,ApplicationEventPublisher applicationEventPublisher) {
         this.userRepository = userRepository;
